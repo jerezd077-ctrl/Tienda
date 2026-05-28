@@ -1,0 +1,17 @@
+.contenedorTabla{
+    width: 100%;
+    padding: 20px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    padding: 10px;
+}
+
+td{
+    padding: 10px;
+}
