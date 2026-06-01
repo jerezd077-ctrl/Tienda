@@ -21,7 +21,7 @@ const ProductosTabla = () =>{
 
         {
             codigo: "P003",
-            nombre: "Arroz",
+            nombre: "Arrozcito",
             cantidad: 5,
             unidad: "kg"
         },
