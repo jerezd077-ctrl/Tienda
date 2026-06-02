@@ -10,6 +10,14 @@ function Newsletter() {
   };
 
   const [valor, setValor] = useState("");
+  const [nombre, setNombre] = useState("");
+
+  const handleClick = () => {
+    if (valor.trim() !== "") {
+      setNombre(valor);
+      setValor("");
+    }
+  };
 
   return (
     <div className="newsletter-card">
@@ -22,7 +30,8 @@ function Newsletter() {
         value={valor}
         onChange={(e) => setValor(e.target.value)}
       />
-      <button className="newsletter-boton">{info.boton}</button>
+      <button className="newsletter-boton" onClick={handleClick}>{info.boton}</button>
+      {nombre && <p className="newsletter-mensaje">✅ ¡Gracias, {nombre}!</p>}
     </div>
   );
 }
